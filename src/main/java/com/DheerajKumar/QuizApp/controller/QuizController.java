@@ -38,6 +38,6 @@ public class QuizController {
             @PathVariable Integer id,
             @RequestBody List<Response> responses
     ){
-        return quizService.calculateResult(1,responses);
+        return quizService.calculateResult(id,responses);
     }
 }
